@@ -6,4 +6,3 @@ Il existe 2 façons d'acceder a la page de restaurant, soit en tant que:
 
 - **Utilistaeur enregistré**: il peut acceder a l'integralité de site et a plusieurs fonctionnalités
 - **Invité**: il peut acceder uniquement a une version limitée du site; il ne peut pas reserver, il peut pas acceder aux évenements, son contenu ne sera pas personnalisé, Il ne peut pas commander le plat du jour.
-cc
