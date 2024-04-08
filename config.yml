@@ -1,0 +1,14 @@
+# config.yml
+settings:
+  database:
+    host: 'localhost'
+    port: 5432
+    user: 'db_user'
+    password: 'db_password'
+    name: 'db_name'
+  server:
+    host: 'localhost'
+    port: 8000
+  logging:
+    level: 'info'
+    file: 'app.log'
