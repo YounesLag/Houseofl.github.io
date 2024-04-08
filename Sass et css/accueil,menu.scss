@@ -1,0 +1,26 @@
+%structure{
+     display: flex;
+     align-items: center;
+     background-color: navy;
+
+    
+           }
+header{
+    @extend %structure;
+
+
+}
+footer{
+    @extend %structure;
+
+}
+#menu {
+    display: flex;
+    align-items: center;
+}
+table{
+    td{
+        padding: auto;
+        margin: auto;
+    }
+}

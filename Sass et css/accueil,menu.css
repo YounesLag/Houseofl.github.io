@@ -1,0 +1,14 @@
+header, footer {
+  display: flex;
+  align-items: center;
+  background-color: navy; }
+
+#menu {
+  display: flex;
+  align-items: center; }
+
+table td {
+  padding: auto;
+  margin: auto; }
+
+/*# sourceMappingURL=accueil,menu.css.map */
