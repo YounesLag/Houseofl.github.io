@@ -1,23 +1,48 @@
-$bg-color1:#000000;
-%structure{
-     display: flex;
-     align-items: center;
-     
-
-    
-           }
-%header{
-    
+$bg-color:black;
 
 
+%structure {
+    width: 100%;
+    padding: 20px 0;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-%footer{
+body {
+    margin: 0;
+    padding: 0;
+}
 
+.logo {
+    padding-top: 140px;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 100%;
 }
-#menuh{
-   height:200px;
-   background-color: $bg-color1;
-}
-.logo{
+
+#menuh,#accueilh,#menuf{
     @extend %structure;
+    background-color: $bg-color;
 }
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin:0;
+}
+
+#bg{
+    background: url("O:/photos restaurant/torrisi1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    flex-grow: 1;
+    -webkit-background-size: cover; //pour comptabilité avec safari et chrome
+    -moz-background-size: cover; //pour comptabilité avec mozilla
+    -o-background-size: cover; //pour comptabilité avec opera
+    background-size: cover;
+}
+
