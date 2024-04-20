@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,KAAU;EACL,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;;AAaxB,MAAM;EACH,MAAM,EAAC,KAAK;EACZ,gBAAgB,EAlBR,OAAO",
+"sources": ["Structure_generale.scss"],
+"names": [],
+"file": "Structure_generale.css"
+}

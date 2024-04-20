@@ -1,0 +1,23 @@
+$bg-color1:#000000;
+%structure{
+     display: flex;
+     align-items: center;
+     
+
+    
+           }
+%header{
+    
+
+
+}
+%footer{
+
+}
+#menuh{
+   height:200px;
+   background-color: $bg-color1;
+}
+.logo{
+    @extend %structure;
+}
