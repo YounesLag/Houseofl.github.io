@@ -73,6 +73,10 @@
   font-weight: lighter;
   font-style: normal;
 }
+#priveleges a {
+  text-decoration: none;
+  color: white;
+}
 
 footer {
   flex: 1;
@@ -263,4 +267,13 @@ form button:hover {
   box-shadow: 0 0 5px #074e53;
   background-color: white;
   color: #074e53;
+}
+
+body::-webkit-scrollbar-track {
+  background: #da9100;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  visibility: visible;
+  background: #074e53;
 }/*# sourceMappingURL=contact.css.map */

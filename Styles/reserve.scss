@@ -1,128 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merienda:wght@300..900&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+
 body{
   width: 100vw;
   overflow-x: hidden;
 }
 #reservef{
-  height: 150px;
-  background-color: #074e53;
-  flex-basis: 90%;
-}
-#reservef section{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #074e53;
-  div{
-    flex-basis:33.33%;
-    display: block;
-    padding:0 10px;
-    object-fit: contain;
-    h3{
-      text-align: center;
-      color:wheat;
+    height: 150px;
+    background-color: #074e53;
+    flex-basis: 90%;
+  }
+  #reservef section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #074e53;
+    div{
+      flex-basis:33.33%;
+      display: block;
+      padding:0 10px;
+      object-fit: contain;
+      h3{
+        text-align: center;
+        color:wheat;
+        font-family: "Syne", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:weight;
+        font-style: normal;
+      }
+      p{
+        line-height: 1.5em;
+        color:white;
+        font-family: "Syne regular", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: lighter;
+        font-style: normal;
     }
-    p{
-      line-height: 1.5em;
-      color:white;
+    button{
+      padding:5px;
+      border-radius: 30px;
+      border: none;
+      background-color: #872b42;
+      color: white;
+      font-size:12px;
+      font-family: "Syne regular", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: lighter;
+      font-style: normal;
+      margin: 5px;
+      transition: transform 0.3s ease, box-shadow ease 0.3s;
+    }
+    button:hover{
+        background-color: white;
+        color:#872b42 ;
+        box-shadow: 0 0 5px #872b42;
+    }
   }
-  button{
-    padding:5px;
-    border-radius: 30px;
-    border: none;
-    background-color: #872b42;
-    color: white;
-    font:12px;
-    padding: 5px;
-  }
-  button:hover{
-    background-color: white;
-    color:#872b42 ;
-    box-shadow: 0 0 5px #872b42;
-}
-}
 }
 #priveleges{
-display: flex;
-flex-direction: column;
-height:auto;
-ul{
-  list-style: none;
-  li{
+  display: flex;
+  flex-direction: column;
+  height:auto;
+  ul{
+    list-style: none;
+    li{
+      color:white;
+      font-family: "Syne regular", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: lighter;
+      font-style: normal;
+    }
+  }
+  a{
+    text-decoration: none;
     color:white;
   }
-}
 
 }
 
 footer{
-flex:1;
-background-color:white;
-display: flex;
-justify-content: center;
-order:2;
+  flex:1;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  order:2;
 
-  ul{
-    align-items: center;
-    list-style:square;
-    display: flex;
-    flex-direction: row;
-    list-style-position: inside;
-      li{
-        color:black;
-        font-size: 13px;
-        padding:3px 20px;
-        font-weight: bold;
+    ul{
+      align-items: center;
+      list-style:square;
+      display: flex;
+      flex-direction: row;
+      list-style-position: inside;
+        li{
+          color:black;
+          font-size: 13px;
+          padding:3px 20px;
+          font-weight: bold;
+          }
+          li:hover{
+            color:#872b42;
+          }
         }
-        li:hover{
-          color:#872b42;
-        }
-      }
 }
 #sectionfooter{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 #suivre{
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-img{
- padding:10px 10px;
- vertical-align: middle;
- filter: brightness(150%);
-}
-#image-container{
+  img{
    padding:10px 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
+   vertical-align: middle;
+   filter: brightness(150%);
+  }
+  #image-container{
+     margin:10px 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
 }
 #joindre{
-h3{
-  margin-left:25px;
-}
-ul{
-  flex-direction: column;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-li{
-  color:white;
-  padding:5px 5px;
-}
-img{
-  padding:10px 10px;
-  vertical-align: middle;
-  filter: brightness(150%);
-}
-#position{
-  margin-left:30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  h3{
+    margin-left:25px;
+  }
+  ul{
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  li{
+    color:white;
+    padding:5px 5px;
+    font-family: "Syne regular", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+  }
+  img{
+    padding:10px 10px;
+    vertical-align: middle;
+    filter: brightness(150%);
+  }
+  #position{
+    margin-left:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 #cont {
   display: flex;
@@ -188,6 +220,10 @@ h1 {
   font-size: 1.25rem; 
   color: #074e53; 
   margin-bottom: 2rem; 
+  font-family: "Merienda", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
 }
 
 label {
@@ -222,4 +258,11 @@ button[type="reset"] {
     background-color: white;
     color:#872b42;
   }
+}
+body::-webkit-scrollbar-track{
+  background: #da9100;
+}
+body::-webkit-scrollbar-thumb:hover{
+  visibility: visible;
+ background:#074e53;
 }

@@ -72,6 +72,10 @@
       font-style: normal;
     }
   }
+  a{
+    text-decoration: none;
+    color: white;
+  }
 
 }
 
@@ -265,4 +269,11 @@ form{
         }
       }
       
+}
+body::-webkit-scrollbar-track{
+  background: #da9100;
+}
+body::-webkit-scrollbar-thumb:hover{
+  visibility: visible;
+ background:#074e53;
 }

@@ -277,6 +277,10 @@ footer{
           flex-direction: column;
           h3{
             text-align: center;
+            padding: 0 5px;
+          }
+          h5{
+            padding:0 5px;
           }
            
         }
@@ -292,7 +296,6 @@ footer{
        #infoeve{
         background-color:#efdecd;
         box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin:15px 5px;
         padding: 0px 0px;
         text-align:center;
         display:flex;
@@ -475,4 +478,11 @@ form button[type="reset"] {
 
 form button[type="reset"]:hover {
   background-color: #c9302c;
+}
+body::-webkit-scrollbar-track{
+  background: #da9100;
+}
+body::-webkit-scrollbar-thumb:hover{
+  visibility: visible;
+ background:#074e53;
 }

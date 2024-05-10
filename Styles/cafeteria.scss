@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merienda:wght@300..900&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+
 .polaroid:hover{
     box-shadow: 0 0 20px 3px #a67b5b;
 }
@@ -48,10 +55,18 @@
       h3{
         text-align: center;
         color:#3c280d;
+        font-family: "Syne", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:weight;
+        font-style: normal;
       }
       p{
         line-height: 1.5em;
         color:#65350f;
+        font-family: "Syne regular", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: lighter;
+        font-style: normal;
     }
     button{
       padding:5px;
@@ -61,6 +76,11 @@
       color: #efdecd;
       font:12px;
       margin: 5px;
+      font-family: "Syne regular", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: lighter;
+      font-style: normal;
+      transition: transform 0.3s ease, box-shadow ease 0.3s;
     }
     button:hover{
         background-color: #a67b5b;
@@ -139,6 +159,10 @@ footer{
   li{
     color:#65350f;
     padding:5px 5px;
+    font-family: "Syne regular", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
   }
   img{
     padding:10px 10px;

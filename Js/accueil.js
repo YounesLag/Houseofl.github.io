@@ -1,4 +1,4 @@
-import { getComputedStyle } from 'get-computed-style';
+
 //toggle pour la liste
 document.querySelectorAll('#maList li').forEach(item => {
     item.addEventListener('click', () => {
