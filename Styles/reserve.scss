@@ -1,0 +1,225 @@
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+#reservef{
+  height: 150px;
+  background-color: #074e53;
+  flex-basis: 90%;
+}
+#reservef section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #074e53;
+  div{
+    flex-basis:33.33%;
+    display: block;
+    padding:0 10px;
+    object-fit: contain;
+    h3{
+      text-align: center;
+      color:wheat;
+    }
+    p{
+      line-height: 1.5em;
+      color:white;
+  }
+  button{
+    padding:5px;
+    border-radius: 30px;
+    border: none;
+    background-color: #872b42;
+    color: white;
+    font:12px;
+    padding: 5px;
+  }
+  button:hover{
+    background-color: white;
+    color:#872b42 ;
+    box-shadow: 0 0 5px #872b42;
+}
+}
+}
+#priveleges{
+display: flex;
+flex-direction: column;
+height:auto;
+ul{
+  list-style: none;
+  li{
+    color:white;
+  }
+}
+
+}
+
+footer{
+flex:1;
+background-color:white;
+display: flex;
+justify-content: center;
+order:2;
+
+  ul{
+    align-items: center;
+    list-style:square;
+    display: flex;
+    flex-direction: row;
+    list-style-position: inside;
+      li{
+        color:black;
+        font-size: 13px;
+        padding:3px 20px;
+        font-weight: bold;
+        }
+        li:hover{
+          color:#872b42;
+        }
+      }
+}
+#sectionfooter{
+display: flex;
+flex-direction: column;
+}
+#suivre{
+display: flex;
+flex-direction: row;
+
+img{
+ padding:10px 10px;
+ vertical-align: middle;
+ filter: brightness(150%);
+}
+#image-container{
+   padding:10px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+}
+#joindre{
+h3{
+  margin-left:25px;
+}
+ul{
+  flex-direction: column;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+li{
+  color:white;
+  padding:5px 5px;
+}
+img{
+  padding:10px 10px;
+  vertical-align: middle;
+  filter: brightness(150%);
+}
+#position{
+  margin-left:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+#cont {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 30px;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Images/background/wood-1759566_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  flex-grow: 1;
+  -webkit-background-size: cover; // For compatibility with Safari and Chrome
+  -moz-background-size: cover; // For compatibility with Mozilla
+  -o-background-size: cover; // For compatibility with Opera
+  background-size: cover;
+
+}
+#cont {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  height: 600px;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+#table, #salle {
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  margin: 0 15px; 
+}
+
+form {
+  width: 100%; 
+  max-width: 350px; 
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, datalist {
+  width: 90%; 
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.25rem; 
+  color: #074e53; 
+  margin-bottom: 2rem; 
+}
+
+label {
+  display: block;
+  font-size: 0.9rem; 
+  color: #626060;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 10px 20px; 
+  font-size: 0.9rem;
+  color: white; 
+  background-color: #074e53; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  &:hover{
+    box-shadow: 0 0 5px #074e53;
+    background-color: white;
+    color:#074e53
+  }
+}
+
+button[type="reset"] {
+  background-color: #872b42; 
+ 
+  &:hover{
+    box-shadow: 0 0 5px #872b42;
+    background-color: white;
+    color:#872b42;
+  }
+}

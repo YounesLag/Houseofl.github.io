@@ -1,0 +1,148 @@
+.polaroid:hover{
+    box-shadow: 0 0 20px 3px #ffc20d;
+}
+.polaroid button:hover{
+    border: #ffc20d;
+  }
+  body::-webkit-scrollbar-track{
+    background: #ffc20d;
+  }
+  body::-webkit-scrollbar-thumb:hover{
+    visibility: visible;
+   background:orangered;
+  }
+  #indexnav{
+    background-color: #ffc20d;
+  }
+  #navout a{
+    background-color: #ffc20d;
+  }
+  #navout a:hover{
+    background-color: orangered;
+  }
+  #menu-map li a{
+      background-color: #ffc20d;
+    }
+  #menu-map li a:hover{
+    background-color: orangered ; 
+  }
+  dialog::backdrop{
+    background-color: #ffc20d;
+  }
+  #fastf{
+    height: 150px;
+    background-color: #074e53;
+    flex-basis: 90%;
+  }
+  #fastf section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffc20d;
+    div{
+      flex-basis:33.33%;
+      display: block;
+      padding:0 10px;
+      object-fit: contain;
+      h3{
+        text-align: center;
+        color:#009743;
+      }
+      p{
+        line-height: 1.5em;
+        color:white;
+    }
+    button{
+      padding:5px;
+      border-radius: 30px;
+      border: none;
+      background-color: orangered;
+      color: white;
+      font:12px;
+      margin: 5px;
+    }
+  }
+}
+#priveleges{
+  display: flex;
+  flex-direction: column;
+  height:auto;
+  ul{
+    list-style: none;
+    li{
+      color:white;
+    }
+  }
+
+}
+
+footer{
+  flex:1;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  order:2;
+
+    ul{
+      align-items: center;
+      list-style:square;
+      display: flex;
+      flex-direction: row;
+      list-style-position: inside;
+        li{
+          color:black;
+          font-size: 13px;
+          padding:3px 20px;
+          font-weight: bold;
+          }
+          li:hover{
+            color:#872b42;
+          }
+        }
+}
+#sectionfooter{
+  display: flex;
+  flex-direction: column;
+}
+#suivre{
+  display: flex;
+  flex-direction: row;
+
+  img{
+   padding:10px 10px;
+   vertical-align: middle;
+   filter: brightness(150%);
+  }
+  #image-container{
+     margin:10px 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+}
+#joindre{
+  h3{
+    margin-left:25px;
+  }
+  ul{
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  li{
+    color:white;
+    padding:5px 5px;
+  }
+  img{
+    padding:10px 10px;
+    vertical-align: middle;
+    filter: brightness(150%);
+  }
+  #position{
+    margin-left:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

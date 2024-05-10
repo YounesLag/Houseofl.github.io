@@ -4,8 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="../Styles/Structure_generale.css">
+    <link rel="stylesheet" href="../Styles/contact.css">
 </head>
 <body>
-    
+    <header id="contacth">
+        <img class="logo" src="../Images/Logo/house of L logo.svg">
+    </header>
+       
+       <section id="container">
+         <div id="info">
+            <div id="information">
+                <h3>Informations</h3>
+                <p>Adresse : 5 Quai de la Bruche, 67000 Strasbourg</p>
+                <p>Tel : 03 88 24 24 24</p>
+                <h3>Ouverture</h3>
+                <p>Tous les jours de 08:00h jusqu'à 23:30h</p>
+                <h3>Suivez-Nous</h3>
+                    <ul>
+                        <li><img src="../Images/pinterest.svg" alt="pinterest"></li>
+                        <li><img src="../Images/insta.svg" alt="instagram"></li>
+                        <li><img src="../Images/facebook.svg" alt="facebook"></li>
+                        <li><img src="../Images/twitter.svg" alt="twitter"></li>
+                    </ul>
+            </div>
+              
+                <div id="carte"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5%20quai%20de%20la%20bruche,%20strasbourg,france+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    <a href="https://www.gps.ie/">gps systems</a></iframe></div>
+         </div>
+          <div id="form">
+           <form action="Page Contact.html" method="POST">
+            <h3>Contactez-Nous</h3>
+            <div>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="raison">Raison</label>
+                <select id="raison" name="raison" required>
+                    <option value="">Selectionner une raison</option>
+                    <option value="General Inquiry">Demande de renseignement</option>
+                    <option value="Technical Support">Support technique</option>
+                    <option value="Feedback">Avis</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Envoyer un message</button>
+        </form>
+          </div>
+       </section>
+
+    <section id="sectionfooter">
+        <section id="contactf">
+               <section >
+                <div id="suivre">
+                    <h3>Suivez Nous</h3>
+                    <div id="image-container">
+                        <img src="../Images/pinterest.svg" alt="pinterest">
+                        <img src="../Images/insta.svg" alt="instagram">
+                        <img src="../Images/facebook.svg" alt="facebook">
+                        <img src="../Images/twitter.svg" alt="twitter">
+                        <a href="#form"><img src="../Images/email.svg" alt="contact"></a>
+                    </div>
+                </div>
+                <div id="joindre">
+                    <h3>Nous Rejoindre</h3>
+                     <ul>
+                        <li>On Recrute</li>
+                        <li>Devenir Partenaire</li>
+                     </ul>
+                    <div id="position">
+                        <a href="#carte"><img src="../Images/position.svg" alt="trouvez nous"></a>
+                    </div>
+                </div>
+                <div id="priveleges">
+                    <h3>Notre Programme Privilèges</h3>
+                    <p>Inscrivez-vous et bénéficiez d'un accès inédit à notre programme gratuit réservé exclusivement à nos clients enregistrés. En vous inscrivant, vous aurez accès à :</p>
+                    <ul>
+                        <li>Nos Événements exclusifs</li>
+                        <li>Notre Système de Points Récompenses</li>
+                        <li>Les dernières nouvelles en avant-première</li>
+                        <li>Contenu personnalisé et recommandé</li>
+                    </ul>
+                    </p>
+                    <button>Connectez-vous</button>
+                    <button>Inscrivez-vous</button>
+                </div>
+               </section>
+        </section>
+        <footer>
+           <ul>
+            <li id="Priveleges">Programme Priveleges</li>
+            <li>Nous Contacter</li>
+            <li>Copyright</li>
+           </ul>
+        </footer>
+    </section>
 </body>
+
 </html>

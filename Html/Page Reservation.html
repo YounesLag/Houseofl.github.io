@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserver maintenant! | HOL</title>
+    <link rel="stylesheet" href="../Styles/Structure_generale.css">
+    <link rel="stylesheet" href="../Styles/reserve.css">
 </head>
 <body>
-    
+    <header id="reserveh">
+        <img class="logo" src="../Images/Logo/house of L logo.svg">
+    </header>
+
+    <section id="cont">
+         <section id="table">
+             <form action="Page Reservation.html" method="post">
+                <h1>Reserver une table</h1>
+                <label for="theme">Thèmes</label>
+                    <input list="themes" id="theme" name="taille">
+                    <datalist id="themes">
+                        <option value="Régulier"></option>
+                        <option value="Diner romantique"></option>
+                        <option value="Anniversaire"></option>
+                        <option value="Rencontre de travaille"></option>
+                        <option value="Réunion d'amis"></option>
+                        <option value="Diner familial"></option>
+                    </datalist>
+                    <div id="dateheure">
+                        <label for="date">Le</label>
+                    <input type="date" id="date">
+                    <label for="heure">à</label>
+                    <input type="time" id="heure">
+                    </div>
+                    
+                    <div class="reser">
+                        <button type="submit">Reserver</button>
+                        <button type="reset">Annuler</button>
+                    </div>
+             </form>
+         </section>
+
+         <section id="salle">
+            <form action="Page Reservation.html" method="post">
+                <h1>Reserver la salle VIP</h1>
+                <label for="theme2">Thèmes</label>
+                    <input list="themes" id="theme2" name="taille">
+                    <datalist id="themes">
+                        <option value="Marriage"></option>
+                        <option value="Fete entre amis"></option>
+                        <option value="Promotion de travail"></option>
+                        <option value="Rencontre de travaille"></option>
+                        <option value="Réunion d'amis"></option>
+                        <option value="Diner familial"></option>
+                    </datalist>
+                    <label for="date">Le</label>
+                    <input type="date" id="date">
+                    <div class="reser">
+                        <button type="submit">Reserver</button>
+                        <button type="reset">Annuler</button>
+                    </div>
+             </form>
+         </section>
+
+    </section>
+
+
+    <section id="sectionfooter">
+      <section id="reservef">
+             <section >
+              <div id="suivre">
+                  <h3>Suivez Nous</h3>
+                  <div id="image-container">
+                      <img src="../Images/pinterest.svg" alt="pinterest">
+                      <img src="../Images/insta.svg" alt="instagram">
+                      <img src="../Images/facebook.svg" alt="facebook">
+                      <img src="../Images/twitter.svg" alt="twitter">
+                      <a href="Page Contact.html"><img src="../Images/email.svg" alt="contact"></a>
+                  </div>
+              </div>
+              <div id="joindre">
+                  <h3>Nous Rejoindre</h3>
+                   <ul>
+                      <li>On Recrute</li>
+                      <li>Devenir Partenaire</li>
+                   </ul>
+                  <div id="position">
+                      <a href="Page Contact.html"><img src="../Images/position.svg" alt="trouvez nous"></a>
+                  </div>
+              </div>
+              <div id="priveleges">
+                  <h3>Notre Programme Privilèges</h3>
+                  <p>Inscrivez-vous et bénéficiez d'un accès inédit à notre programme gratuit réservé exclusivement à nos clients enregistrés. En vous inscrivant, vous aurez accès à :</p>
+                  <ul>
+                      <li>Nos Événements exclusifs</li>
+                      <li>Notre Système de Points Récompenses</li>
+                      <li>Les dernières nouvelles en avant-première</li>
+                      <li>Contenu personnalisé et recommandé</li>
+                  </ul>
+                  </p>
+                  <button>Connectez-vous</button>
+                  <button>Inscrivez-vous</button>
+              </div>
+             </section>
+      </section>
+      <footer>
+         <ul>
+          <li>Programme Priveleges</li>
+          <li>Nous Contacter</li>
+          <li>Copyright</li>
+         </ul>
+      </footer>
+  </section>
+  
+      <script src="../Js/modals.js"></script>
 </body>
 </html>

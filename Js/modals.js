@@ -1,5 +1,6 @@
 
 const openButtons = document.querySelectorAll("[data-open-modal]");
+const closeButtons = document.querySelectorAll("[data-close-modal]");
 document.addEventListener("DOMContentLoaded", function() {
     openButtons.forEach(button => {
         button.addEventListener("click", () => {
@@ -8,7 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
             dialog.showModal();
         });
     });
+    closeButtons.forEach(button => {
+        button.addEventListener("click",()=> {
+            const modalCNum = button.getAttribute("data-close-modal");
+            const dialog = document.querySelector(`dialog[data-modal="${modalCNum}"]`);
+            dialog.close();
+        })
+    })
 });
+
 const dialogs = document.querySelectorAll("dialog");
 dialogs.forEach(dialog => {
     dialog.addEventListener("click", e => {
@@ -23,4 +32,7 @@ dialogs.forEach(dialog => {
         }
     });
 });
+
+
+
 

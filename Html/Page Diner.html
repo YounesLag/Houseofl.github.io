@@ -3,9 +3,639 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/Structure_generale.css">
+    <link rel="stylesheet" href="../Styles/menu_en_generale.css">
+    <link rel="stylesheet" href="../Styles/diner.css">
+    <link rel="icon" href="" type="image/jpg">
+    <script defer src="../Js/modals.js"></script>
+    <script defer src="../Js/scroll.js"></script>
+    <script defer src="../Js/counter.js"></script>
     <title>Diner</title>
 </head>
 <body>
+    <header id="dinerh">
+        <img class="logo" src="../Images/Logo/house of L diner logo.svg">
+    </header>
+    <section id="section-body">
+        <section id="indexnav">
+            <section id="navout">
+                <a href="Page Cafeteria.html">Cafeteria</a>
+                <a href="Page Fast Food.html">Fast-Food</a>
+                <a href="Page Reservation.html">Reservation</a>
+           </section>
+            <ul id="menu-map">
+                <li><a href="#plats">Traditionnnel Algerien</a></li>
+                <li><a href="#soupes">Soupes</a></li>
+                <li><a href="#Monde">De Quatre coins</a></li>
+                <li><a href="#beverages">Beverages</a></li>
+            </ul>
+        </section>
+        <section id="section-menu">
+         <section class="categorie"> <!--chaque categorie-->
+          <h2 class="titre" id="plats">Plats Traditionnel</h2>
+            <div class="polaroid-grid">
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="1">
+                       <img src="../Images/FOOD/Couscous.jpg" alt="couscous">
+                       <div class="caption">Couscous aux Légumes
+                          <p class="prix">15€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="1" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/Couscous.jpg" alt="couscous">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Couscous aux Légumes <br> <span class="dialogprix">15€</span></p>
+                          <hr>
+                          <p>points: 7</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Semoul</li>
+                              <li>Carottes</li>
+                              <li>Courgettes</li>
+                              <li>Pois Chiche</li>
+                              <li>Poulet / Viande de boeuf</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="1" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="2">
+                       <img src="../Images/FOOD/Rechta.jpg" alt="rechta">
+                       <div class="caption">Rechta
+                          <p class="prix">17€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="2" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/Rechta.jpg" alt="rechta">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Rechta <br> <span class="dialogprix">17€</span></p>
+                          <hr>
+                          <p>points: 7</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Nouilles rechta</li>
+                              <li>Radis blanc</li>
+                              <li>Carottes</li>
+                              <li>Courgette</li>
+                              <li>Pois chiche</li>
+                              <li>Poulet</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="2" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="3">
+                       <img src="../Images/FOOD/Chakhchoukha.jpg" alt="Chakhchoukha">
+                       <div class="caption">Chakhchoukha
+                          <p class="prix">17€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="3" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/Chakhchoukha.jpg" alt="Chakhchoukha">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Chakhchoukha <br> <span class="dialogprix">17€</span></p>
+                          <hr>
+                          <p>points: 6</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Semoules fines de blé dur</li>
+                              <li>Viande d'agneau ou poulet</li>
+                              <li>Oignons</li>
+                              <li>Courgettes</li>
+                              <li>Carottes</li>
+                              <li>Pomme de terre</li>
+                              <li>Tomate fraiche pelée</li>
+                              <li>Oeufs durs</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten, Oeufs</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="3" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+            </div>
+         </section>
+         <section class="categorie"> <!--chaque categorie-->
+          <h2 class="titre" id="soupes">Soupes</h2>
+            <div class="polaroid-grid">
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="4">
+                       <img src="../Images/FOOD/chorba.jpg" alt="chorba">
+                       <div class="caption">Chorba Frik
+                          <p class="prix">15€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="4" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/chorba.jpg" alt="chorba">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Chorba frik <br> <span class="dialogprix">15€</span></p>
+                          <hr>
+                          <p>points: 6</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Frik</li>
+                              <li>Pois chiches</li>
+                              <li>Poulet ou Viande de boeuf</li>
+                              <li>Herbes Frais</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="4" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="5">
+                       <img src="../Images/FOOD/ramen.jpg" alt="ramen">
+                       <div class="caption">Ramen
+                          <p class="prix">22€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="5" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/ramen.jpg" alt="ramen">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Ramen <br> <span class="dialogprix">22€</span></p>
+                          <hr>
+                          <p>points: 9</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Nouilles Ramen</li>
+                              <li>Poulet</li>
+                              <li>Sauce soja</li>
+                              <li>Naruto</li>
+                              <li>Oeufs</li>
+                              <li>Champignons</li>
+                              <li>Oignons verts</li>
+                              <li>Mais</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten, Soja, Oeufs</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="5" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="6">
+                       <img src="../Images/FOOD/soupe citrouille.jpg" alt="soupe citrouille">
+                       <div class="caption">Soupe de Citrouille
+                          <p class="prix">12€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="6" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/soupe citrouille.jpg" alt="soupe citrouille">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Soupe de Citrouille <br> <span class="dialogprix">12€</span></p>
+                          <hr>
+                          <p>points: 6</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Crème fraiche</li>
+                              <li>Citrouille</li>
+                              <li>Oignons</li>
+                              <li>Epices</li>
+                              <li>PAin de mie grillé</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Lactose, Gluten (present dans le pain)</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="6" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="7">
+                       <img src="../Images/FOOD/soupe verte.jpg" alt="soupe verte">
+                       <div class="caption">Soupe Verte
+                          <p class="prix">12€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="7" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/soupe verte.jpg" alt="soupe verte">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Soupe verte <br> <span class="dialogprix">12€</span></p>
+                          <hr>
+                          <p>points: 6</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Epinards</li>
+                              <li>Brocoli</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Aucune</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="7" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+            </div>
+         </section>
+
+         <section class="categorie"> <!--chaque categorie-->
+          <h2 class="titre" id="Monde">De Quatres Coins du Monde</h2>
+            <div class="polaroid-grid">
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="8">
+                       <img src="../images/FOOD/sushi.jpg" alt="sushi">
+                       <div class="caption">Sushi
+                          <p class="prix">20€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="8" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../images/FOOD/sushi.jpg" alt="sushi">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Sushi <br> <span class="dialogprix">20€</span></p>
+                          <hr>
+                          <p>points: 12</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Nori</li>
+                              <li>Riz</li>
+                              <li>Filets de poisssons frais</li>
+                              <li>Oignons verts</li>  
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="8" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="9">
+                       <img src="../Images/FOOD/biryani.jpg" alt="riz biryani">
+                       <div class="caption">Riz Biryani
+                          <p class="prix">19€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="9" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/biryani.jpg" alt="riz biryani">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Riz Biryani<br> <span class="dialogprix">19€</span></p>
+                          <hr>
+                          <p>points: 7</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Riz basmati</li>
+                              <li>Viande d'agneau ou poulet</li>
+                              <li>Oignons</li>
+                              <li>Tomates</li>
+                              <li>Gingembre</li>
+                              <li>Raisins secs</li>
+                              <li>Noix de cajou</li>
+                              <li>Petits pois</li>
+                              <li>Pois chiches</li>
+                              <li>Epices</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Fruits à coques</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="9" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="10">
+                       <img src="../Images/FOOD/Chateaubriand.jpg" alt="chateaubriand">
+                       <div class="caption">Chateaubriand
+                          <p class="prix">50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="10" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/Chateaubriand.jpg" alt="chateaubriand">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Chateaubriand <br> <span class="dialogprix">50€</span></p>
+                          <hr>
+                          <p>points: 20</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Fillet de boeuf</li>
+                              <li>Poivre</li>
+                              <li>Sel</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Aucune</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="10" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="11">
+                       <img src="../Images/FOOD/magrets-canard.jpg" alt="magret de canard">
+                       <div class="caption">Magret de canard
+                          <p class="prix">120€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="11" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/magrets-canard.jpg" alt="magret de canard">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Magret de Canard <br> <span class="dialogprix">120€</span></p>
+                          <hr>
+                          <p>points: 30</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Viande de canard</li>
+                              <li>Patates douce</li>
+                              <li>sauce au miel et balsamique</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Aucune</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="11" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="12">
+                       <img src="../Images/FOOD/fruits de mer.jpg" alt="plateau fruis de mer">
+                       <div class="caption">Plateau Fruits de mer
+                          <p class="prix">80€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="12" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/fruits de mer.jpg" alt="plateau fruits de mer">
+                    </div>
+                    <form action="Page Diner.html" method="get" >
+                        <div><p>Plateau fruits de mer <br> <span class="dialogprix">80€</span></p>
+                          <hr>
+                          <p>points: 24</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Crevettes</li>
+                              <li>Crabes</li>
+                              <li>Huitres</li>
+                              <li>Calamar</li>
+                              <li>Moules</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">crustacés, mollusque</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="12" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+            </div>
+         </section>
+
+        </section>
+     </section>
+     <section id="sectionfooter">
+        <section id="dinerf">
+               <section >
+                <div id="suivre">
+                    <h3>Suivez Nous</h3>
+                    <div id="image-container">
+                        <img src="../Images/pinterest2.svg" alt="pinterest">
+                        <img src="../Images/insta2.svg" alt="instagram">
+                        <img src="../Images/facebook2.svg" alt="facebook">
+                        <img src="../Images/twitter2.svg" alt="twitter">
+                        <a href="Page Contact.html"><img src="../Images/email2.svg" alt="contact"></a>
+                    </div>
+                </div>
+                <div id="joindre">
+                    <h3>Nous Rejoindre</h3>
+                     <ul>
+                        <li>On Recrute</li>
+                        <li>Devenir Partenaire</li>
+                     </ul>
+                    <div id="position">
+                        <a href="Page Contact.html"><img src="../Images/position2.svg" alt="trouvez nous"></a>
+                    </div>
+                </div>
+                <div id="priveleges">
+                    <h3>Notre Programme Privilèges</h3>
+                    <p>Inscrivez-vous et bénéficiez d'un accès inédit à notre programme gratuit réservé exclusivement à nos clients enregistrés. En vous inscrivant, vous aurez accès à :</p>
+                    <ul>
+                        <li>Nos Événements exclusifs</li>
+                        <li>Notre Système de Points Récompenses</li>
+                        <li>Les dernières nouvelles en avant-première</li>
+                        <li>Contenu personnalisé et recommandé</li>
+                    </ul>
+                    </p>
+                    <button>Connectez-vous</button>
+                    <button>Inscrivez-vous</button>
+                </div>
+               </section>
+        </section>
+        <footer>
+           <ul>
+            <li>Programme Priveleges</li>
+            <li>Nous Contacter</li>
+            <li>Copyright</li>
+           </ul>
+        </footer>
+    </section>
     
 </body>
 </html>

@@ -1,0 +1,268 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merienda:wght@300..900&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&family=Paytone+One&family=Syne:wght@400..800&display=swap');
+
+#contactf{
+    height: 150px;
+    background-color: #074e53;
+    flex-basis: 90%;
+  }
+  #contactf section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #074e53;
+    div{
+      flex-basis:33.33%;
+      display: block;
+      padding:0 10px;
+      object-fit: contain;
+      h3{
+        text-align: center;
+        color:wheat;
+        font-family: "Syne", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:weight;
+        font-style: normal;
+      }
+      p{
+        line-height: 1.5em;
+        color:white;
+        font-family: "Syne regular", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: lighter;
+        font-style: normal;
+    }
+    button{
+      padding:5px;
+      border-radius: 30px;
+      border: none;
+      background-color: #872b42;
+      color: white;
+      font-size:12px;
+      font-family: "Syne regular", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: lighter;
+      font-style: normal;
+      margin: 5px;
+      transition: transform 0.3s ease, box-shadow ease 0.3s;
+    }
+    button:hover{
+        background-color: white;
+        color:#872b42 ;
+        box-shadow: 0 0 5px #872b42;
+    }
+  }
+}
+#priveleges{
+  display: flex;
+  flex-direction: column;
+  height:auto;
+  ul{
+    list-style: none;
+    li{
+      color:white;
+      font-family: "Syne regular", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: lighter;
+      font-style: normal;
+    }
+  }
+
+}
+
+footer{
+  flex:1;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  order:2;
+
+    ul{
+      align-items: center;
+      list-style:square;
+      display: flex;
+      flex-direction: row;
+      list-style-position: inside;
+        li{
+          color:black;
+          font-size: 13px;
+          padding:3px 20px;
+          font-weight: bold;
+          }
+          li:hover{
+            color:#872b42;
+          }
+        }
+}
+#sectionfooter{
+  display: flex;
+  flex-direction: column;
+}
+#suivre{
+  display: flex;
+  flex-direction: row;
+
+  img{
+   padding:10px 10px;
+   vertical-align: middle;
+   filter: brightness(150%);
+  }
+  #image-container{
+     margin:10px 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+}
+#joindre{
+  h3{
+    margin-left:25px;
+  }
+  ul{
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  li{
+    color:white;
+    padding:5px 5px;
+    font-family: "Syne regular", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+  }
+  img{
+    padding:10px 10px;
+    vertical-align: middle;
+    filter: brightness(150%);
+  }
+  #position{
+    margin-left:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#container{
+    display:flex;
+    flex-direction: row;
+    object-fit: contain;
+    background-color: white;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+}
+#information{
+    background-color: #ff8f8f;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    h3{
+      padding:0 1rem;
+      font-size: 1.25rem ;
+      font-family: "Paytone One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    p{
+      color:white;
+      padding:5px 1rem;
+      font-family: "Comfortaa", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+    }
+    ul{
+      list-style: none;
+      color:white;
+      padding-bottom:8px;
+      font-family: "Comfortaa", sans-serif;
+      font-optical-sizing: auto;
+      font-weight:300;
+      font-style: normal;
+      display: flex;
+      flex-direction: row;
+    }
+    img{
+      vertical-align: middle;
+      padding-right: 8px;
+    }
+    
+}
+#carte{
+    flex:1;
+    
+}
+#form{
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+  background-image: url("../Images/background/coffee-8227641_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  flex-grow: 1;
+  -webkit-background-size: cover; // For compatibility with Safari and Chrome
+  -moz-background-size: cover; // For compatibility with Mozilla
+  -o-background-size: cover; // For compatibility with Opera
+  background-size: cover;
+}
+form{
+    width: 100%; 
+    max-width: 350px; 
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        text-align: center;
+        font-size: 1.25rem; 
+        color: #074e53; 
+        margin-bottom: 2rem; 
+    }
+    label {
+        display: block;
+        font-size: 0.9rem; 
+        color: #626060;
+        margin-bottom: 0.5rem;
+      }
+      input,select{
+        width: 90%; 
+        padding: 10px;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+      }
+      select{
+        margin-left:10px;
+      }
+      button {
+        padding: 10px 20px; 
+        font-size: 0.9rem;
+        color: white; 
+        background-color: #074e53; 
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; 
+        margin-top: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        &:hover{
+          box-shadow: 0 0 5px #074e53;
+          background-color: white;
+          color:#074e53
+        }
+      }
+      
+}

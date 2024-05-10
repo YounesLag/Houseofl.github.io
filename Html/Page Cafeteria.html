@@ -3,12 +3,915 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\Sass et css\Structure_generale.css">
+    <link rel="stylesheet" href="../Styles/Structure_generale.css">
+    <link rel="stylesheet" href="../Styles/menu_en_generale.css">
+    <link rel="stylesheet" href="../Styles/cafeteria.css">
+    <link rel="icon" href="" type="image/jpg">
+    <script defer src="../Js/modals.js"></script>
+    <script defer src="../Js/scroll.js"></script>
+    <script defer src="../Js/counter.js"></script>
     <title>Cafeteria</title>
 </head>
 <body>
-    <header>
-        <img src="../Images/Logo/house of L CAFETERIA.svg">
+    <header id="cafeh">
+        <img class="logo" src="../Images/Logo/house of L CAFETERIA.svg">
     </header>
+    <section id="section-body">
+        <section id="indexnav">
+            <section id="navout">
+                <a href="Page Fast Food.html">Fast-Food</a>
+                <a href="Page Diner.html">Diner</a>
+                <a href="Page Reservation.html">Reservation</a>
+           </section>
+            <ul id="menu-map">
+                <li><a href="#chaud">Boisson chaudes</a></li>
+                <li><a href="#Fraiche">Boisssons Fraiches</a></li>
+                <li><a href="#Viennoiserie">Patisserie et Viennoiseries</a></li>
+                <li><a href="#Dessert">Desserts</a></li>
+            </ul>
+        </section>
+        <section id="section-menu">
+         <section class="categorie"> <!--chaque categorie-->
+          <h2 class="titre" id="chaud">Boisssons Chaudes</h2>
+            <div class="polaroid-grid">
+    
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="1">
+                       <img src="../Images/FOOD/café au lait.jpg" alt="café au lait">
+                       <div class="caption">Café au Lait
+                          <p class="prix">3€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="1" >
+                    <div class="image-cont">
+                      <img class="dialog-img"  src="../Images/FOOD/café au lait.jpg" alt="café au lait">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Café au Lait <br> <span class="dialogprix">3€</span></p>
+                          <hr>
+                          <p>points: 3</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Café</li>
+                              <li>Lait</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Caféine, Lactose</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="1" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+    
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="2">
+                       <img src="../Images/FOOD/coffee-2714970_1280.jpg" alt="café noir">
+                       <div class="caption">Café noir
+                          <p class="prix">2€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="2" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/coffee-2714970_1280.jpg" alt="café noir">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Café noir<br> <span class="dialogprix">2€</span></p>
+                          <hr>
+                          <p>points: 2</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>café</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Caféine</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="2" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="3">
+                       <img src="../Images/FOOD/thé.jpg" alt="Thé">
+                       <div class="caption">Thé
+                          <p class="prix">2.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="3" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/thé.jpg" alt="Thé">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Thé <br> <span class="dialogprix">2.50€</span></p>
+                          <hr>
+                          <p>points: 2</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Feuilles de théiere</li>
+                              <li>Citron</li>
+                              <li>Menthe</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Aucune</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="3" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+    
+            </div>
+         </section>
+
+         <section class="categorie"> <!--chaque categorie-->
+          <h2 class="titre" id="Fraiche">Boisssons Fraiches</h2>
+            <div class="polaroid-grid">
+    
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="4">
+                       <img src="../Images/FOOD/orange.jpg" alt="jus d'orange">
+                       <div class="caption">Jus d'orange
+                          <p class="prix">3.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="4" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/orange.jpg" alt="jus d'orange">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Jus d'orange <br> <span class="dialogprix">3.50€</span></p>
+                          <hr>
+                          <p>points: 3</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Oranges</li>
+                              <li>Eau</li>
+                              <li>Sucre</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Aucune</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="4" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+    
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="5">
+                       <img src="../Images/FOOD/jus de citron.jpg" alt="Jus de citron, gingembre">
+                       <div class="caption">Jus de Citron, Gingembre
+                          <p class="prix">3.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="5" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/jus de citron.jpg" alt="Jus de citron, gingembre">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Jus de Citron, Gingembre <br> <span class="dialogprix">3.50€</span></p>
+                          <hr>
+                          <p>points: 4</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Citrons Vert</li>
+                              <li>Gingembre</li>
+                              <li>Sucre</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Aucune</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="5" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="6">
+                       <img src="../Images/FOOD/Smoothie vert.jpg" alt="Smoothie vert">
+                       <div class="caption"> Smoothie Vert
+                          <p class="prix">4€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="6" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/Smoothie vert.jpg" alt="Smoothie vert">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Smoothie Vert <br> <span class="dialogprix">4€</span></p>
+                          <hr>
+                          <p>points: 5</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Kiwi</li>
+                              <li>Citron vert</li>
+                              <li>Menthe</li>
+                              <li>Avocat</li>
+                              <li>Sucre</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Aucune</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="6" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="7">
+                       <img src="../Images/FOOD/smoothie rouge.jpg" alt="Smoothie Rouge">
+                       <div class="caption"> Smoothie Rouge
+                          <p class="prix">4€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="7" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/smoothie rouge.jpg" alt="Smoothie Rouge">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Smoothie Rouge <br> <span class="dialogprix">4€</span></p>
+                          <hr>
+                          <p>points: 5</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                            <li>Fraises</li>
+                            <li>Pastèque</li>
+                            <li>Sucre</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Sucré</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="7" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="8">
+                       <img src="../Images/FOOD/chocolate milkshake.jpg" alt="Milkshake au choocolat">
+                       <div class="caption"> MIlkshake au chocolat
+                          <p class="prix">3.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="8" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/chocolate milkshake.jpg" alt="Milkshake au choocolat">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Milkshake au chocolat <br> <span class="dialogprix">3.50€</span></p>
+                          <hr>
+                          <p>points: 3</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Lait</li>
+                              <li>Chocolat</li>
+                              <li>Bananes</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">sucré, Lactose</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="8" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+    
+            </div>
+         </section>
+
+         <section class="categorie"> <!--chaque categorie-->
+          <h2 class="titre" id="Viennoiserie">Patisserie et Viennoiseries</h2>
+            <div class="polaroid-grid">
+    
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="9">
+                       <img src="../Images/FOOD/pain chocolat.jpg" alt="pain au chocolat">
+                       <div class="caption">Pain au chocolat
+                          <p class="prix">1.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="9" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/pain chocolat.jpg" alt="pain au chocolat">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Pain au chocolat <br> <span class="dialogprix">1.50€</span></p>
+                          <hr>
+                          <p>points: 2</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Pates feuilletée</li>
+                              <li>chocolat</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="9" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+    
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="10">
+                       <img src="../Images/FOOD/croissant.jpg" alt="Croissant">
+                       <div class="caption">Croissant
+                          <p class="prix">1.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="10" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/croissant.jpg" alt="Croissant">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Croissant <br> <span class="dialogprix">1.50€</span></p>
+                          <hr>
+                          <p>points: 2</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Pate feuilletée</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="10" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="11">
+                       <img src="../Images/FOOD/pain raisin.jpg" alt="pain au raisin">
+                       <div class="caption"> Pain au Raisin
+                          <p class="prix">1.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="11" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/pain raisin.jpg" alt="pain au raisin">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Pain au raisin <br> <span class="dialogprix">1.50€</span></p>
+                          <hr>
+                          <p>points: 2</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Pate feuilletée</li>
+                              <li>Raisin sec</li>
+                              <li>Noisettes </li>
+                              <li>Amandes effilées</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Fruits à coque, sucré</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="11" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="12">
+                       <img src="../Images/FOOD/beignets.jpg" alt="beignets français">
+                       <div class="caption">Beignets Français
+                          <p class="prix">2.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="12" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/beignets.jpg" alt="beignets français">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Beignets Français <br> <span class="dialogprix">2.50€</span></p>
+                          <hr>
+                          <p>points: 3</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Pates beignets</li>
+                              <li>chocolat</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten, sucré</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="12" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="13">
+                       <img src="../Images/FOOD/doughnuts.jpg" alt="Doughnuts">
+                       <div class="caption"> Doughnuts
+                          <p class="prix">1.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="13" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/doughnuts.jpg" alt="Doughnuts">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Doughnuts <br> <span class="dialogprix">1.50€</span></p>
+                          <hr>
+                          <p>points: 2</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Chocolat</li>
+                              <li>Vanille</li>
+                              <li>Sucre</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten, sucré</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="13" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="14">
+                       <img src="../Images/FOOD/mille-feuille.jpg" alt="mille feuilles">
+                       <div class="caption"> Mille Feuilles
+                          <p class="prix">3€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="14" >
+                    <div class="image-cont">
+                        <img class="dialog-img"  src="../Images/FOOD/mille-feuille.jpg" alt="mille feuilles">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Mille-Feuilles <br> <span class="dialogprix">3€</span></p>
+                          <hr>
+                          <p>points: 3</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Pate feuilletée</li>
+                              <li>Crème patissière</li>
+                              <li>chocolat</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten, Lactose, sucré</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="14" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+    
+            </div>
+         </section>
+
+         <section class="categorie"> <!--chaque categorie-->
+          <h2 class="titre" id="Dessert">Desserts</h2>
+            <div class="polaroid-grid">
+    
+                <div class="polaroid"><!-- 1 element de chaque categorie-->
+                  <button data-open-modal="15">
+                       <img src="../Images/FOOD/gaufres.jpg" alt="Gauffres">
+                       <div class="caption">Gaufres
+                          <p class="prix">6€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="15" >
+                    <div class="image-cont">
+                      <img class="dialog-img" src="../Images/FOOD/gaufres.jpg" alt="Gauffres">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Gauffres<br> <span class="dialogprix">6€</span></p>
+                          <hr>
+                          <p>points: 5</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Gaufres</li>
+                              <li>Framboise</li>
+                              <li>Fruits de bois</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten, Lactose, Sucré</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="15" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+    
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="16">
+                       <img src="../Images/FOOD/pancakes.jpg" alt="Pancakes">
+                       <div class="caption">Pancakes au sirop d'érable
+                          <p class="prix">5€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="16" >
+                    <div class="image-cont">
+                        <img class="dialog-img"  src="../Images/FOOD/pancakes.jpg" alt="Pancakes">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Pancakes au sirop d'érable<br> <span class="dialogprix">5€</span></p>
+                          <hr>
+                          <p>points: 5</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Pancakes</li>
+                              <li>Fruits de bois</li>
+                              <li>Sirop d'érable</li>
+                              <li>Framboise</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Gluten, Lactose, </p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="16" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="17">
+                       <img src="../Images/FOOD/tiramisu.jpg" alt="Tiramisu">
+                       <div class="caption"> Tiramisu
+                          <p class="prix">5€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="17" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/tiramisu.jpg" alt="Tiramisu">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Tiramisu<br> <span class="dialogprix">5€</span></p>
+                          <hr>
+                          <p>points: 5</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Mascarponne</li>
+                              <li>Boudoirs</li>
+                              <li>Nescafé</li>
+                              <li>Cacao</li>
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Caféine, Sucré</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="17" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="18">
+                       <img src="../Images/FOOD/Breakfast.jpg" alt="Petit dejeuner">
+                       <div class="caption">Petit dejeuner complet
+                          <p class="prix">5.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="18" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/Breakfast.jpg" alt="Petit dejeuner">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Petit dejeuner complet <br> <span class="dialogprix">5.50€</span></p>
+                          <hr>
+                          <p>points: 6</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Bananes</li>
+                              <li>Flocons d'avoine</li>
+                              <li>Noix de pécans</li>
+                              <li>Fruits de bois</li>
+                              <li>Lait</li>
+                              <li>Yaourt grecque</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Fruits à coque, Lactose, Gluten</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="18" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+
+                <div class="polaroid"><!--1 element de chaque categorie-->
+                  <button data-open-modal="19">
+                       <img src="../Images/FOOD/ice cream.jpg" alt="Ice cream">
+                       <div class="caption"> Ice Cream
+                          <p class="prix">2.50€</p>
+                       </div>
+                  </button>
+                  <dialog data-modal="19" >
+                    <div class="image-cont">
+                        <img class="dialog-img" src="../Images/FOOD/ice cream.jpg" alt="Ice cream">
+                    </div>
+                    <form action="Page Cafeteria.html" method="get" >
+                        <div><p>Ice Cream <br> <span class="dialogprix">2.50€</span></p>
+                          <hr>
+                          <p>points: 2</p>
+                        </div>
+                      <div> 
+                          <hr>
+                          <h3>Ingredients</h3>
+                          <ul>
+                              <li>Glaces</li>
+                              <li>Lait</li>
+                              <li>Arome</li>
+                              
+                          </ul>
+                          <hr>
+                          <h3>Allergènes</h3>
+                          <p class="allergenes">Lactose</p>
+                        </div>
+                        <hr>
+                          <div class="sais-quantité">
+                            <button type="button" onclick="decrementer()">-</button>
+                            <input type="number" class="quantité" name="quantité" value="0" min="0" readonly>
+                            <button type="button" onclick="incrementer()">+</button>
+                          </div>
+                          <div class="com">
+                            <button class="annule" data-close-modal="19" type="reset">Annuler</button>
+                            <button type="submit">Commander</button>
+                          </div>
+                      </form>
+                </dialog>
+                </div> <!--ici termine chaque element de la categorie-->
+         </section>
+
+        </section>
+     </section>
+     <section id="sectionfooter">
+        <section id="cafef">
+               <section >
+                <div id="suivre">
+                    <h3>Suivez Nous</h3>
+                    <div id="image-container">
+                        <img src="../Images/pinterest.svg" alt="pinterest">
+                        <img src="../Images/insta.svg" alt="instagram">
+                        <img src="../Images/facebook.svg" alt="facebook">
+                        <img src="../Images/twitter.svg" alt="twitter">
+                        <a href="Page Contact.html"><img src="../Images/email.svg" alt="contact"></a>
+                    </div>
+                </div>
+                <div id="joindre">
+                    <h3>Nous Rejoindre</h3>
+                     <ul>
+                        <li>On Recrute</li>
+                        <li>Devenir Partenaire</li>
+                     </ul>
+                    <div id="position">
+                        <a href="Page Contact.html"><img src="../Images/position.svg" alt="trouvez nous"></a>
+                    </div>
+                </div>
+                <div id="priveleges">
+                    <h3>Notre Programme Privilèges</h3>
+                    <p>Inscrivez-vous et bénéficiez d'un accès inédit à notre programme gratuit réservé exclusivement à nos clients enregistrés. En vous inscrivant, vous aurez accès à :</p>
+                    <ul>
+                        <li>Nos Événements exclusifs</li>
+                        <li>Notre Système de Points Récompenses</li>
+                        <li>Les dernières nouvelles en avant-première</li>
+                        <li>Contenu personnalisé et recommandé</li>
+                    </ul>
+                    </p>
+                    <button>Connectez-vous</button>
+                    <button>Inscrivez-vous</button>
+                </div>
+               </section>
+        </section>
+        <footer>
+           <ul>
+            <li>Programme Priveleges</li>
+            <li>Nous Contacter</li>
+            <li>Copyright</li>
+           </ul>
+        </footer>
+    </section>
+     
 </body>
 </html>

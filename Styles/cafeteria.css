@@ -1,0 +1,165 @@
+.polaroid:hover {
+  box-shadow: 0 0 20px 3px #a67b5b;
+}
+
+.polaroid button:hover {
+  border: #a67b5b;
+}
+
+body::-webkit-scrollbar-track {
+  background: #a67b5b;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  visibility: visible;
+  background: #efdecd;
+}
+
+#indexnav {
+  background-color: #efdecd;
+}
+
+#navout a {
+  background-color: #efdecd;
+}
+
+#navout a:hover {
+  background-color: #4b3621;
+  color: white;
+}
+
+#menu-map li a {
+  background-color: #efdecd;
+}
+
+#menu-map li a:hover {
+  background-color: #4b3621;
+  color: white;
+}
+
+dialog::backdrop {
+  background-color: #efdecd;
+}
+
+#cafef {
+  height: 150px;
+  flex-basis: 90%;
+}
+
+#cafef section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #efdecd;
+}
+#cafef section div {
+  flex-basis: 33.33%;
+  display: block;
+  padding: 0 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#cafef section div h3 {
+  text-align: center;
+  color: #3c280d;
+}
+#cafef section div p {
+  line-height: 1.5em;
+  color: #65350f;
+}
+#cafef section div button {
+  padding: 5px;
+  border-radius: 30px;
+  border: none;
+  background-color: #65350f;
+  color: #efdecd;
+  font: 12px;
+  margin: 5px;
+}
+#cafef section div button:hover {
+  background-color: #a67b5b;
+  color: #481f01;
+  box-shadow: 0 0 5px #3c280d;
+}
+
+#priveleges {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+#priveleges ul {
+  list-style: none;
+}
+#priveleges ul li {
+  color: #65350f;
+}
+
+footer {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  order: 2;
+}
+footer ul {
+  align-items: center;
+  list-style: square;
+  display: flex;
+  flex-direction: row;
+  list-style-position: inside;
+}
+footer ul li {
+  color: black;
+  font-size: 13px;
+  padding: 3px 20px;
+  font-weight: bold;
+}
+footer ul li:hover {
+  color: #a67b5b;
+}
+
+#sectionfooter {
+  display: flex;
+  flex-direction: column;
+}
+
+#suivre {
+  display: flex;
+  flex-direction: row;
+}
+#suivre img {
+  padding: 10px 10px;
+  vertical-align: middle;
+  filter: brightness(150%);
+}
+#suivre #image-container {
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#joindre h3 {
+  margin-left: 25px;
+}
+#joindre ul {
+  flex-direction: column;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+#joindre li {
+  color: #65350f;
+  padding: 5px 5px;
+}
+#joindre img {
+  padding: 10px 10px;
+  vertical-align: middle;
+  filter: brightness(150%);
+}
+#joindre #position {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=cafeteria.css.map */

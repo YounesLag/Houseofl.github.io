@@ -1,17 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Sass et css/Structure_generale.css">
-      <title>Accueil</title>
+    <link rel="stylesheet" href="../Styles/Structure_accueil.css">
+    <link rel="icon" href="../Images/house-16.ico">
+    <script defer src="../Js/modals.js"></script>
+    <script defer src="../Js/accueil.js"></script>
+    <title>Accueil</title>
 </head>
 <body>
     <header id="accueilh">
         <img class="logo" src="../Images/Logo/house of L logo.svg">
+        <h1 id="separation">|</h1>
+        <section id="section-button">
+            <button data-open-modal="1" class="b-header">Rejoignez-nous</button>
+            <button data-open-modal="2"  class="b-header">Accéder à votre compte</button>
+            <button class="b-header"><a href="Page Menu.html" target="_self">Accéder en tant qu'invité</a></button>
+        </section>
+
+        <dialog data-modal="1">
+           <form action="Page Menu.html" method="post" id="inscription">
+            <h1>Inscription</h1>
+            <fieldset>
+                <label for="name">Votre Nom</label>
+                <input type="text" id="name"  placeholder="Nom" required>
+            <label for="prenom">Votre Prénom</label>
+                <input type="text" id="prenom" placeholder="Prenom" required>
+            <label for="email">Email</label>
+                <input type="email"  id="email" placeholder="email" required>
+            <label for="tel"></label>
+                <input type="text" id="tel" placeholder="Numéro de teléphone" required>
+            <label for="adress1">Adresse</label>
+                <input type="text" id="adress1" placeholder="Adresse" required>
+             <label for="adress2">Adresse N°2 (optionnel)</label>
+                <input type="text" id="adress2" placeholder="Adresse N°2" >
+            </fieldset>
+        <label for="mdp">Creer un mot de passe</label>
+              <input type="password"  placeholder="mot de passe" id="mdp" required>
+         <label for="confirm">Confirmer le mot de passe</label>
+            <input type="password" id="confirm" required>
+            <div class="inscr-connex">
+                <button type="submit">S'inscrire</button>
+                <button data-close-modal="1" type="reset">Annuler</button>
+            </div>
+           </form>
+        </dialog>
+
+        <dialog data-modal="2">
+           <form action="Page Menu.html" method="post" id="inscription">
+            <h1>Connexion</h1>
+            <fieldset>
+            <label for="email">Email</label>
+                <input type="email"  id="email" placeholder="email" required>
+            </fieldset>
+        <label for="mdp">Mot de passe</label>
+              <input type="password"  placeholder="mot de passe" id="mdp" required>
+            <div class="inscr-connex">
+                <button type="submit">Login</button>
+                <button data-close-modal="2" type="reset">Annuler</button>
+            </div>
+           </form>
+        </dialog>
     </header>
-    <footer>
-        <a href="Page Contact.html"> Contactez-nous</a>
-    </footer>
+    <section id="bg">
+    <section id="welcome">
+        <h1>Bienvenue à notre Maison <br> Qualité, Goùt, Joie</h1>
+    </section>
+    <section id="presentation">
+          <div id="apropos">
+            <h3>A Propos</h3>
+            <p> Notre Restaurant </p>
+          </div>
+          <div id="histoire">
+            <h3>Notre Histoire</h3>
+          </div>
+          <div id="menu">
+            <h3>Notre Menu</h3>
+          </div>
+     </section>
+     <section id="event">
+        <div id="infoeve">
+            <div id="masterchef">
+                <img src="../Images/masterchef1.jpg">
+               </div>
+            <div id="infoe">
+                <h3>Bientot...</h3>
+                 <h5>Événement Spécial : La Cuisine des Étoiles à Strasbourg</h5>
+                    <p>Rejoignez-nous pour une soirée culinaire inoubliable où les talents de MasterChef France illumineront Strasbourg de leurs créations gastronomiques. Dans cet épisode spécial, filmé en plein cœur de notre ville, les candidats relèveront le défi de préparer des plats exquis qui captureront l’essence de la cuisine française moderne.</p>
+                    <p>Date : À définir Lieu : Notre restaurant emblématique à Strasbourg</p>
+                    <p>Venez découvrir les saveurs innovantes et les techniques raffinées de ces chefs émergents, qui ont ébloui les juges et le public par leur créativité et leur passion pour la cuisine. Cet événement est une occasion unique de goûter à des plats dignes d’un restaurant étoilé, tout en profitant d’une ambiance festive et chaleureuse.</p>
+                    <p>Réservez votre table dès maintenant et préparez-vous à être transporté dans un voyage gustatif où chaque bouchée raconte une histoire.</p>
+                </div>
+        </div>
+            
+     </section>
+    </section>
+     <section id="imap">
+        <div id="info">
+            <h3>Informations</h3>
+            <p>Adresse : 5 Quai de la Bruche, 67000 Strasbourg</p>
+            <p>Tel : 03 88 24 24 24</p>
+            <h3>Ouverture</h3>
+            <p>Tous les jours de 08:00h jusqu'à 23:30h</p>
+            <h3>Suivez-Nous</h3>
+                <ul>
+                    <li><img src="../Images/pinterest.svg" alt="pinterest">@housofloff</li>
+                    <li><img src="../Images/insta.svg" alt="instagram">@House_of_L</li>
+                    <li><img src="../Images/facebook.svg" alt="facebook">@House_Of_L</li>
+                    <li><img src="../Images/twitter.svg" alt="twitter">@HOUSEofl</li>
+                </ul>
+        </div>
+        <div id="carte">
+            <div id="carte"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5%20quai%20de%20la%20bruche,%20strasbourg,france+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                <a href="https://www.gps.ie/">gps systems</a></iframe></div>
+     </section>
+
+     <section id="FAQ">
+
+        <ul id="maList">
+             <h4>FAQ</h4>
+            <li>
+                <span>Dois-je m'inscrire ?</span>
+                <p id="p1" style="display: none;">Evidemment, si vous êtes un client régulier qui fréquente souvent le
+                restaurant et que vous souhaitez bénéficier de notre programme Privilèges.</p>
+            </li>
+                <li>
+                    <span>Qu'est-ce que le Programme Privilèges ?</span>
+                    <p id="p2" style="display: none;">Le Programme Privilèges permet à nos clients inscrits de recevoir des 
+                        recommandations et des nouveautés de notre part, ainsi qu'un accès au système des Points Récompenses.</p>
+                </li>
+            <li>
+                <span>Qu'est-ce que les Points Récompenses ?</span>
+                <p id="p3" style="display: none;">Les Points Récompenses sont notre façon de récompenser nos chers clients.
+                     Chaque article a un certain nombre de points que vous recevrez lors de son achat. Lorsque vous atteignez un 
+                     certain nombre de points, vous pouvez les échanger contre un bon de réduction dans votre boutique préférée.
+                      Pour plus de détails, consultez notre <a href="#privileges">Programme Privilèges</a>.</p>
+
+                </p>
+            </li>
+        </ul>
+     </section>
+
+    <section id="sectionfooter">
+        <section id="accueilf">
+               <section >
+                <div id="suivre">
+                    <h3>Suivez Nous</h3>
+                    <div id="image-container">
+                        <img src="../Images/pinterest.svg" alt="pinterest">
+                        <img src="../Images/insta.svg" alt="instagram">
+                        <img src="../Images/facebook.svg" alt="facebook">
+                        <img src="../Images/twitter.svg" alt="twitter">
+                        <a href="Page Contact.html" target="_blank"><img src="../Images/email.svg" alt="contact"></a>
+                    </div>
+                </div>
+                <div id="joindre">
+                    <h3>Nous Rejoindre</h3>
+                     <ul>
+                        <li>On Recrute</li>
+                        <li>Devenir Partenaire</li>
+                     </ul>
+                    <div id="position">
+                        <a href="#carte"><img src="../Images/position.svg" alt="trouvez nous"></a>
+                    </div>
+                </div>
+                <div id="priveleges">
+                    <h3>Notre Programme Privilèges</h3>
+                    <p>Inscrivez-vous et bénéficiez d'un accès inédit à notre programme gratuit réservé exclusivement à nos clients enregistrés. En vous inscrivant, vous aurez accès à :</p>
+                    <ul>
+                        <li>Nos Événements exclusifs</li>
+                        <li>Notre Système de Points Récompenses</li>
+                        <li>Les dernières nouvelles en avant-première</li>
+                        <li>Contenu personnalisé et recommandé</li>
+                    </ul>
+                    </p>
+                    <button>Connectez-vous</button>
+                    <button>Inscrivez-vous</button>
+                </div>
+               </section>
+        </section>
+        <footer>
+           <ul>
+            <li id="Priveleges">Programme Priveleges</li>
+            <li>Nous Contacter</li>
+            <li>Copyright</li>
+           </ul>
+        </footer>
+    </section>
+  
 </body>
 </html>

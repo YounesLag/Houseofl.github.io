@@ -1,0 +1,53 @@
+
+%structure {
+    width: 100vw;
+    padding: 20px 0;
+    height:125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+  width:12px;
+}
+.logo {
+    padding-top: 0;
+    padding-left: 0px;
+    padding-right: 100px;
+    max-height: 100%;
+    display:flex;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#menuh,#reserveh,#contacth{
+    @extend %structure;
+    background: #074e53;
+}
+#fasth{
+    @extend %structure;
+    background: linear-gradient(to bottom,white 99%,#ffc20d);
+}
+#cafeh{
+    @extend %structure;
+    background:linear-gradient(to bottom, #efdecd 99%, #4b371c);
+}
+#dinerh{
+    @extend %structure;
+    background:linear-gradient(to bottom, #d2fefe 99%, #008080);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin:0;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    width:100vw;
+ }
+
